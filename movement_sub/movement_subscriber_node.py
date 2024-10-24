@@ -9,6 +9,9 @@ class MovementSubscriber(Node):
 def main(args=None):
     # Initialize rclpy
     rclpy.init(args)
+    # Instantiate node and activate node
+    subsrciber_node = MovementSubscriber()
+    rclpy.spin(subsrciber_node)
     # Shutdown rclpy
     rclpy.shutdown()
 
