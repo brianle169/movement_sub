@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'movement_subscriber_exec = movement_sub.movement_subscriber_node:main',
         ],
     },
 )
